@@ -61,6 +61,7 @@ $Server->bind('open', 'wsOnOpen');
 $Server->bind('close', 'wsOnClose');
 // for other computers to connect, you will probably need to change this to your LAN IP or external IP,
 // alternatively use: gethostbyaddr(gethostbyname($_SERVER['SERVER_NAME']))
-$Server->wsStartServer('172.31.27.127', 8080);
+$ip = gethostbyname('www.serverchatphp.com')
+$Server->wsStartServer($ip, 8080);
 
 ?>
