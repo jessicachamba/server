@@ -28,7 +28,7 @@
 
 		$(document).ready(function() {
 			log('Connecting...');
-			Server = new FancyWebSocket('ws://172.30.254.33:8080');
+			Server = new FancyWebSocket('ws://172.31.27.127:8080');
 
 			$('#message').keypress(function(e) {
 				if ( e.keyCode == 13 && this.value ) {
